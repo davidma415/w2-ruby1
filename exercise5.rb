@@ -3,7 +3,7 @@ counter = 0
 energy = 100
 options = ["Walk","Run", "Go home", "Eat", "Rest"]
 opt_length = options.length
-while counter < 10000
+while counter < 10000 # could use while true since we don't have a specified distance for this loop to break
   puts "==============================="
   puts "Options: "
   puts options [0..opt_length]
