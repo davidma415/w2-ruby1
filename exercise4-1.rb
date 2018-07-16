@@ -1,3 +1,4 @@
+# This exercise will compare the value of two numbers
 puts "Enter a number: "
 num = gets.chomp.to_i
 if num > 100
