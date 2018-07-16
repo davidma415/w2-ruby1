@@ -1,12 +1,12 @@
 # initial step would be to just keep using this counter and assuming distance will not go greater than 10 000 kms.
 counter = 0
 energy = 100
-options = ["Walk","Run", "go home", "Eat", "Rest"]
-optLength = options.length
+options = ["Walk","Run", "Go home", "Eat", "Rest"]
+opt_length = options.length
 while counter < 10000
   puts "==============================="
   puts "Options: "
-  puts options [0..optLength]
+  puts options [0..opt_length]
   puts "==============================="
   puts "Your current energy is #{energy}"
   puts "What would you like to do?"
@@ -27,9 +27,9 @@ while counter < 10000
   elsif choice == options[4].downcase #option to rest, gain 30 energy
     energy += 30
     puts "You stop to take a quick breather. Your energy is now #{energy}. Your current distance is #{counter}km."
+  elsif choice == options[2].downcase # This will select go home and break the while loop
+    break;
   elsif (options.include? choice) == false # This will give an error if the selected option is not valid
     puts "That is not a valid option. Select another. Your distance from home is #{counter}km."
-  elsif choice == options[2] # This will select go home and break the while loop
-    break;
   end
 end
