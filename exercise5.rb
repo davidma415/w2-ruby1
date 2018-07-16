@@ -10,8 +10,7 @@ while counter < 10000
   puts "==============================="
   puts "Your current energy is #{energy}"
   puts "What would you like to do?"
-  choice = gets.chomp
-  choice = choice.downcase
+  choice = gets.chomp.downcase
   if choice == options[0].downcase # if the user picks walk, distance will incr by 1, they will also gain 1 energy
     counter += 1
     energy += 1
